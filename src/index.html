@@ -1,96 +1,27 @@
 <!doctype html>
-<html lang="zh-CN" class="page-login">
-
+<html>
 <head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="Chrome=1,IE=edge"/>
-    <link type="image/x-icon" rel="shortcut icon" href="/favicon.ico"/>
-    <title>叮咚小区-商户管理后台</title>
-    <meta name="keywords" content="叮咚小区,叮咚小区官网，叮咚小区服务站,15分钟快送,社区O2O,壹佰米">
-    <meta name="description" content="叮咚小区是一款为日常小区生活提供便利的手机应用软件。叮咚小区将线上APP与线下服务站相结合，把可依赖、有温度的服务送至千家万户，是中国领先的小区生活服务平台。">
-    <link rel="stylesheet" href="lib/base.css"/>
-    <link rel="stylesheet" href="app/login/login.css"/>
-    <script src="app/seed.js"></script>
+    <meta charset="utf-8">
+    <title>博客</title>
+    <script src="js/require.js" defer async="true" data-main="js/main"></script>
 </head>
 
 <body>
-<div id="page" class="loginPage">
-    <div class="bgContainer" id="radiobg">
-        <img  id="radiobgImg" src="app/login/img/loginBg.png"/>
-    </div>
-    <div id="content">
-        <div class="contentWrap">
-            <div id="errorTip" class="errorTip">
-            </div>
-            <form id="loginForm" onsubmit="return false">
-                <fieldset>
-                    <legend class="hidden">商户登录</legend>
-                    <div class="inputItem">
-                        <p class="email pngfix"></p>
-                        <label for="loginEmail" id="loginEmailLabel">请输入商户账号</label>
-                        <input onfocus="this.parentNode.children[1].style.display='none'"
-                               onblur="if(!this.value.length)this.parentNode.children[1].style.display='block'"
-                               type="text" id="loginEmail" name="email" autocomplete="off" size="64" maxlength="64"
-                               tabindex="1">
-                    </div>
-                    <div class="inputItem">
-                        <p class="userPwd pngfix"></p>
-                        <label for="loginPwd" id="loginPwdLabel">请输入密码</label>
-                        <input onfocus="this.parentNode.children[1].style.display='none'"
-                               onblur="if(!this.value.length)this.parentNode.children[1].style.display='block'"
-                               type="password" id="loginPwd" name="pwd" maxlength="20" size="20" tabindex="2">
-                    </div>
-                    <div class="formSubmit"><a id="btnLocal" class="submitButton text-hidden" href="javascript:void(0)">登录</a>
-                    </div>
-                    <div class="formOptions fix">
-                        <div class="checkboxWrap on">
-                            <input type="checkbox" name="remember" id="loginRemember">
-                        </div>
-                        <label for="loginRemember" id="loginRememberLabel">记住账号</label>
-                        <a class="hidden" href="#" target="_blank" class="forgetPwd">忘记密码?</a>
-                    </div>
-                </fieldset>
-            </form>
-            <div class="indexHr"></div>
-            <div class="otherLogin">
-                <a class="goSwitchBtn onLogin hidden" href="javascript:void 0">返回登录</a>
-            </div>
-            <div class="indexRegister fix">
-                <span class="indexRegisterTip" id="goSwitchTip"></span>
-            </div>
-        </div>
-    </div>
-    <div id="footer">
-        <p class="link">
-            <a href="http://www.100.me/download/" target="_blank">叮咚小区APP下载</a> <span>|</span>
-            <a href="http://www.100.me/media.html" target="_blank">媒体资料</a> <span>|</span>
-            <a href="http://www.100.me/page/show/contactus.html" target="_blank">联系我们</a>
-        </p>
 
-        <p>Copyright &copy; 2007 - 2016 上海壹佰米网络科技有限公司 版权所有
-        </p>
 
-        <p><a href="http://www.miibeian.gov.cn/" target="_blank">沪ICP备14046000号</a></p>
-    </div>
-</div>
 
-<div class="scripts">
-    <script src="lib/jquery.js"></script>
-    <script src="lib/oo.js"></script>
-    <script src="lib/util.js"></script>
-    <script src="lib/query.js"></script>
-    <script src="lib/cookie.js"></script>
-    <script src="lib/store.js"></script>
-    <script src="lib/json2.js"></script>
-    <script src="lib/md5.js"></script>
-    <script src="app/core.js"></script>
-    <script src="app/common.js"></script>
-    <script src="app/user.js"></script>
-    <script src="app/login/login.js"></script>
-    <script>
-        Ddxq.login.init();
-    </script>
-</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
-
 </html>
