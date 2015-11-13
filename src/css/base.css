@@ -1,0 +1,56 @@
+@charset "utf-8";
+/*CSS reset*/
+html{color:#555;background:#FFF;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}
+li{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}
+input,button,textarea,select{*font-size:100%;}
+a{text-decoration: none;}
+.none{ display: none;}
+.left{ float: left;}
+.right{ float: right;}
+div{box-sizing: border-box;}
+/*文字排版*/
+.f12{font-size:12px;}
+.f13{font-size:13px;}
+.f14{font-size:14px;}
+.f16{font-size:16px;}
+/*定位*/
+.tl{text-align:left;}
+.tc{text-align:center;}
+.tr{text-align:right;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+
+.zoom{zoom:1;}
+.hidden{visiility:hidden;}
+.none{display:none;}
+/*边距*/
+.m10{margin:10px;}
+.mt5{margin-top:5px;}
+.mt10{margin-top:10px;}
+.mt20{margin-top:20px;}
+.mb10{margin-bottom:10px;}
+.ml5{margin-left:5px;}
+.ml10{margin-left:10px;}
+.mr5{margin-right:5px;}
+.mr10{margin-right:10px;}
+
+.p10{padding:10px;}
+.p15{padding:15px;}
+.p30{padding:30px;}
+
+.pt5{padding-top:5px;}
+.pt10{padding-top:10px;}
+.pt15{padding-top:15px;}
+.pt20{padding-top:20px;}
+.pt30{padding-top:30px;}
+
+.red{ background:#FF4040; }
+.blue{ background:#00a8e6; }
+.green{ background:#729A23; }
+.gray{ background:#C5C5C5; }

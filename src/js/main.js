@@ -1,39 +1,41 @@
-/**
- * =====================================================
- * project： 曹操
- * @VERSION@ (http://www.caocao.ddxq.mobi/)
- * Controller-date: 2014-09-24
- * Copyright 2013 叮咚小区
- * designed by @doob-yang.
- * @BUILD@
- * docs:
- * UI框架: ratchet
- * 类库: zepto
- * 主框架: require
- * 模板引擎: template
- * 打包工具: r
- * =====================================================
- */
-window.__uri = function (uri) {
-    return uri;
-};
-//require 配置
+
 require.config({
     paths: {
-        /* 类库部分 */
         jquery: 'jquery',
-        template: 'baiduTemplate'
+        template: 'baiduTemplate',
+        skin:'skin'
     },
     shim: {
-        $: {exports: '$'},
-        Fastclick: {exports: 'Fastclick'}
+        template: ['jquery']
     }
 });
 
 require.intload = function () {
-    require(['jquery','template'],function (jquery, template) {
-        alert($)
- });
+    require(['jquery','template','skin'],function (jquery,template,skin) {
+            function skinInit(){
+                $('#spanSkin').click(function(){
+                    var ul=$(this).siblings('ul');
+                    if(ul.is(':hidden'))
+                    {
+                        ul.show();
+                    }
+                    else
+                    {
+                        ul.hide();
+                    }
+                });
+                var skinA=$('#spanSkin').siblings('ul').find('a');
+                skinA.each(function(index){
+                    $(this).click(function(){
+                        var cl=$(this).css('background-color');
+                        var color='#fff';
+                        skin.skinFn(color,cl);
+                    })
+                })
+            }
+         skinInit();//换肤
+
+    });
 };
 require.intload();
 
