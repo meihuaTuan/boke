@@ -15,6 +15,12 @@ a{text-decoration: none;}
 .left{ float: left;}
 .right{ float: right;}
 div{box-sizing: border-box;}
+@font-face{
+    font-family: lele;
+    src: url("");
+}
+body,html{ font-family: "微软雅黑";}
+
 /*文字排版*/
 .f12{font-size:12px;}
 .f13{font-size:13px;}
@@ -54,3 +60,27 @@ div{box-sizing: border-box;}
 .blue{ background:#00a8e6; }
 .green{ background:#729A23; }
 .gray{ background:#C5C5C5; }
+
+.bgcolor01{background-color: #88b6f2;}
+.bgcolor02{background-color: #a8c090;}
+.bgcolor03{background-color: #ccc;}
+.bgcolor04{background-color: #3d91b5;}
+@-webkit-keyframes bannerMove{  from { margin-left: -200px;}    to {margin-left: 200px;}}
+@-moz-keyframes bannerMove{   from {left: -200px;}    to {left: 00px;}}
+@keyframes bannerMove{   from {left: -200px;}    to {left: 500px;} }
+@-moz-keyframes bannerMove02{  from {right: -200px;}  to {right:500px;}}
+@keyframes bannerMove02{  from {right: -200px;} to {right: 500px;} }
+
+@keyframes bannerMove03{
+    from {
+        transform:rotateX(0deg);
+        -ms-transform:rotateX(0deg);
+        -webkit-transform:rotateX(0deg);
+       }
+   to {transform:rotateX(360deg);
+       -ms-transform:rotateX(360deg); /* IE 9 */
+       -webkit-transform:rotateX(360deg);}
+}
+
+
+.footer{ min-width: 1200px; height:150px; clear: both; text-align: center; font-size:12px; line-height: 150px;}

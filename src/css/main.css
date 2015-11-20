@@ -1,5 +1,25 @@
 @charset "utf-8";
-.main-header{ width:100%; min-width: 1200px; height: 50px; line-height: 50px;font-size: 14px; color:#fff;text-align: center; background:#729A23;}
+@import url(/css/base.css?__lele);
+/*index*/
+.content{margin:0 auto; width:1200px; height:100%; position: relative; }
+.banner{ width:100%;min-width:1200px;margin-top:20px;background-color:#D6D6D6;height:450px;clear: both;  overflow: hidden; }
+.banner p{ font-family:"黑体"; position: absolute; }
+.banner .ba01{  font-size:80px;left: -200px;  top:100px;  color: #555;
+    -webkit-animation: bannerMove 3s ease forwards;
+    -o-animation: bannerMove 3s ease forwards;
+    animation: bannerMove 3s ease forwards;}
+.banner .ba02{  font-size:70px;  right: -200px;top:220px; color: #fff;
+    -webkit-animation: bannerMove02 3s ease forwards;
+    -o-animation: bannerMove02 3s ease forwards;
+    animation: bannerMove02 3s ease forwards;}}
+.main-ul{ width: 100%; min-height: 500px;}
+.main-ul li{ width:25%; height:180px; margin-bottom: 20px; float: left; overflow: hidden; }
+.main-ul li a{ display: block; text-align: center; line-height:180px; color: #fff; font-size: 40px; margin:10px;}
+.main-ul li a:hover{ -webkit-animation: bannerMove03 1s ease;
+                     -o-animation: bannerMove03 1s ease;
+                     animation: bannerMove03 1s ease;  }
+/*list*/
+.main-header{ width:100%; min-width: 1200px; height: 70px; line-height: 70px;font-size: 14px; color:#fff;text-align: center; background:#333;}
 .main-header nav{ display: inline-block; text-align: center;}
 .main-header nav a{ color: #fff; display: inline-block; padding: 0 10px;}
 .main-header nav .change-skin{display: inline-block;width:30px; color:#fff; position: relative;}
@@ -7,17 +27,25 @@
 .main-header ul li{height: 22px;}
 .main-header ul li a{display:block; width:20px;height:20px;}
 #spanSkin{ display: block; cursor: pointer;}
-
 .wrapper{margin: 0 auto; margin-top:40px; width: 1200px;overflow: hidden;}
-.asideLeft{ width:200px; border-right:1px solid #ccc;}
+.asideLeft{ width:200px; min-height: 500px; border-right:1px solid #ccc;}
 .asideLeft li{ padding-left: 10px;}
-.asideLeft h2{ font-size: 16px; padding-left: 10px; color:#fff; background:#729A23; height:40px; line-height:40px;}
+.asideLeft h2{ font-size: 16px; padding-left: 10px; color:#fff; background:#ADADAD; height:40px; line-height:40px;}
 .level-menu1 li span{ display: block; height: 40px; line-height: 40px; font-size: 16px;}
 .level-menu2 li{ padding-left: 15px; height: 30px; line-height: 30px;}
 .level-menu2 li a{ color: #666;line-height: 30px;}
 
 .sideRight{width:1000px; }
-.sideRight p{ color: #666;line-height: 35px; padding-left:30px; font-size: 14px;}
+.sideRight p{ color:#666;line-height:35px; padding-left:30px; font-size:14px;}
+/*user*/
+.user-form{ margin: 20px;}
+.user-form .user-div{ width: 800px; margin: 20px;}
+.user-form .user-div label{ font-size: 16px;}
+.user-form .user-div input{ width: 240px; height:35px; line-height: 35px;}
+.user-form .user-div select{ width: 240px; height:35px; line-height: 35px;}
+
+
+
 
 
 
