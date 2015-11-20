@@ -47,29 +47,35 @@
         </dl>
     </div>
     <div class="sideRight right">
-        <form class="user-form">
+        <form class="user-form" id="formid" method='get' action='/index.html'  >
             <div class="user-div">
-                <label>选择课程分类</label>：
-                <select name="cars">
-                    <option value ="volvo">Volvo</option>
-                    <option value ="saab">Saab</option>
-                    <option value="opel">Opel</option>
-                    <option value="audi">Audi</option>
+                <label>选择课程一级分类</label>：
+                <select name="one">
+                    <option value ="0">HTML教程</option>
+                    <option value ="1">CSS教程</option>
+                    <option value="2">CSS教程</option>
+                    <option value="3">CSS教程</option>
+                </select>
+            </div>
+            <div class="user-div">
+                <label>选择课程二级分类</label>：
+                <select name="two">
+                    <option value ="a">HTML标签的用法</option>
+                    <option value ="b">CSS选择器</option>
+                    <option value="c">CSS选择器</option>
+                    <option value="d">CSS选择器</option>
                 </select>
             </div>
             <div class="user-div">
                 <label>创建课程标题</label>：
-                <input type="text" name="" value="" />
+                <input type="text" name="title" value="" />
             </div>
             <div class="user-editorTxt">
-                  <textarea id="editor1" name="editor" placeholder="Type your text here...">
+                  <textarea id="editor1" name="editor" placeholder="Type your text here..." style="height: 1000px;">
                   </textarea>
             </div>
-
-
-
-
-        </form>
+            <input type="submit" />
+  </form>
 
     </div>
 </div>
@@ -86,10 +92,10 @@
 
 
 
-
-
-<script type="text/javascript" src="/js/edit/js/wysiwyg.js"></script>
 <script type="text/javascript" src="/js/edit/js/wysiwyg-editor.js"></script>
 <script type="text/javascript" src="/js/edit/js/demo.js"></script>
+<script type="text/javascript" src="/js/edit/js/wysiwyg.js"></script>
+
+
 </body>
 </html>

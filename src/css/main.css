@@ -40,7 +40,7 @@
 /*user*/
 .user-form{ margin: 20px;}
 .user-form .user-div{ width: 800px; margin: 20px;}
-.user-form .user-div label{ font-size: 16px;}
+.user-form .user-div label{ font-size: 16px; display: inline-block; width:150px; text-align: left;}
 .user-form .user-div input{ width: 240px; height:35px; line-height: 35px;}
 .user-form .user-div select{ width: 240px; height:35px; line-height: 35px;}
 
