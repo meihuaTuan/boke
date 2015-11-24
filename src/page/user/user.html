@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>博客</title>
     <link rel="shortcut icon" href="/img/favicon.ico" />
-    <link href="/css/main.css" rel="stylesheet" type="text/css" />
     <link href="/js/edit/css/demo.css" rel="stylesheet" type="text/css" />
+    <link href="/css/main.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="/js/jquery.js"></script>
     <!--[if IE]>
     <script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
@@ -33,21 +33,16 @@
 
     </nav>
 </header>
-<div class="wrapper">
+<div class="wrapper user">
     <div class="asideLeft left">
         <h2>个人中心</h2>
         <dl>
             <dt>课程分类</dt>
-            <dd>js</dd>
-            <dd>js</dd>
-            <dd>js</dd>
-            <dd>js</dd>
-            <dd>js</dd>
-            <dd>js</dd>
         </dl>
     </div>
-    <div class="sideRight right">
-        <form class="user-form" id="formid" method='get' action='/index.html'  >
+    <div class="sideRight right relative">
+        <span href="javascript:;" class="btn btn-titleOne mt20 absolute">创建教程标题</span>
+        <form class="user-form" id="formid" method='post' action='/index.html'  >
             <div class="user-div">
                 <label>选择课程一级分类</label>：
                 <select name="one">
@@ -71,10 +66,11 @@
                 <input type="text" name="title" value="" />
             </div>
             <div class="user-editorTxt">
-                  <textarea id="editor1" name="editor" placeholder="Type your text here..." style="height: 1000px;">
-                  </textarea>
+                <input id="editor0" name="hidden" type="hidden">
+                <textarea id="editor1" name="editor" placeholder="在这里输入文本" >
+                </textarea>
             </div>
-            <input type="submit" />
+            <input type="submit" class="btn-submit btn mt10 right"  value="保存"/>
   </form>
 
     </div>
@@ -92,10 +88,10 @@
 
 
 
+<script src="/js/dialog/dialog-min.js"></script>
+<script type="text/javascript" src="/js/user.controller.js"></script>
+<script type="text/javascript" src="/js/edit/js/wysiwyg.js"></script>
 <script type="text/javascript" src="/js/edit/js/wysiwyg-editor.js"></script>
 <script type="text/javascript" src="/js/edit/js/demo.js"></script>
-<script type="text/javascript" src="/js/edit/js/wysiwyg.js"></script>
-
-
 </body>
 </html>

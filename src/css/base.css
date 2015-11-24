@@ -11,10 +11,18 @@ h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
 input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}
 input,button,textarea,select{*font-size:100%;}
 a{text-decoration: none;}
+.zoom{zoom:1;}
 .none{ display: none;}
 .left{ float: left;}
 .right{ float: right;}
 div{box-sizing: border-box;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.hidden{visiility:hidden;}
+.none{display:none;}
+.relative{position: relative;}
+.absolute{position: absolute;}
+.inline-block{ display:inline-block;}
+.block{ display: block;}
 @font-face{
     font-family: lele;
     src: url("");
@@ -30,11 +38,6 @@ body,html{ font-family: "微软雅黑";}
 .tl{text-align:left;}
 .tc{text-align:center;}
 .tr{text-align:right;}
-.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
-
-.zoom{zoom:1;}
-.hidden{visiility:hidden;}
-.none{display:none;}
 /*边距*/
 .m10{margin:10px;}
 .mt5{margin-top:5px;}
@@ -65,6 +68,14 @@ body,html{ font-family: "微软雅黑";}
 .bgcolor02{background-color: #a8c090;}
 .bgcolor03{background-color: #ccc;}
 .bgcolor04{background-color: #3d91b5;}
+
+.btn{ width: 80px; height: 30px; line-height: 30px; text-align: center;border: none; color: #fff; cursor: pointer;}
+.btn-warning{background:#F3A403;}
+.btn-save{background:#129DC5;}
+.btn-submit{background: #00a8e6;}
+
+
+/*动画*/
 @-webkit-keyframes bannerMove{  from { margin-left: -200px;}    to {margin-left: 200px;}}
 @-moz-keyframes bannerMove{   from {left: -200px;}    to {left: 00px;}}
 @keyframes bannerMove{   from {left: -200px;}    to {left: 500px;} }

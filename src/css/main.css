@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import url(/css/base.css?__lele);
+@import url(/js/dialog/ui-dialog.css?__lele);
 /*index*/
 .content{margin:0 auto; width:1200px; height:100%; position: relative; }
 .banner{ width:100%;min-width:1200px;margin-top:20px;background-color:#D6D6D6;height:450px;clear: both;  overflow: hidden; }
@@ -44,6 +45,12 @@
 .user-form .user-div input{ width: 240px; height:35px; line-height: 35px;}
 .user-form .user-div select{ width: 240px; height:35px; line-height: 35px;}
 
+.btn-titleOne{ display: block; background-color: #00a8e6; width:160px; right: 0; top:0; border-radius: 4px; }
+.btn-titleOne:hover{background-color:#00a8e6; color:#fff;}
+
+.title-dialog{ width:500px; height:200px; line-height: 30px;}
+.title-dialog li{ height: 40px;}
+.title-dialog input{ width: 200px; height: 30px; line-height: 30px; margin-left: 20px;}
 
 
 
