@@ -42,19 +42,19 @@
     </div>
     <div class="sideRight right relative">
         <span href="javascript:;" class="btn btn-titleOne mt20 absolute">创建教程标题</span>
-        <form class="user-form" id="formid" method='post' action='/index.html'  >
+        <form class="user-form" id="userFormid" method='post'>
             <div class="user-div">
                 <label>选择课程一级分类</label>：
-                <select name="one">
-                    <option value ="0">HTML教程</option>
-                    <option value ="1">CSS教程</option>
-                    <option value="2">CSS教程</option>
-                    <option value="3">CSS教程</option>
+                <select name="selOneTitle">
+                    <option value="html">HTML教程</option>
+                    <option value="css">CSS教程</option>
+                    <option value="css">CSS教程</option>
+                    <option value="css">CSS教程</option>
                 </select>
             </div>
             <div class="user-div">
                 <label>选择课程二级分类</label>：
-                <select name="two">
+                <select name="selTwoTitle">
                     <option value ="a">HTML标签的用法</option>
                     <option value ="b">CSS选择器</option>
                     <option value="c">CSS选择器</option>
@@ -63,14 +63,14 @@
             </div>
             <div class="user-div">
                 <label>创建课程标题</label>：
-                <input type="text" name="title" value="" />
+                <input type="text" name="selThrTitle" value="" />
             </div>
             <div class="user-editorTxt">
-                <input id="editor0" name="hidden" type="hidden">
-                <textarea id="editor1" name="editor" placeholder="在这里输入文本" >
+                <input id="editor0" type="hidden">
+                <textarea id="editor1" name="userEditor" placeholder="在这里输入文本" >
                 </textarea>
             </div>
-            <input type="submit" class="btn-submit btn mt10 right"  value="保存"/>
+            <input type="submit" id="userBtnSave" class="btn-submit btn mt10 right"  value="保存"/>
   </form>
 
     </div>

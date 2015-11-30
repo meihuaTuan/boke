@@ -7,8 +7,9 @@ var user_controller=function (){
          attr:{
 
          },
-        data:{
-
+        apis:{
+            userSaveTitle:'/page/models/userDialog.html',
+            userSaveArticle:'/page/list.html'
         },
         tpmls:{
             userdl:'/page/models/userDialog.html'
@@ -16,10 +17,13 @@ var user_controller=function (){
         _initEvents:function(){     //事件
             var that=this;
             $(".user").delegate('.btn-titleOne', 'click', function () {
-                that.dialog();
+                that.userDialog();
+            });
+            $("#userBtnSave").click(function(){
+                that.userpage();
             });
         },
-        dialog:function(){
+        userDialog:function(){
             var that=this;
             var htmlobj=$.ajax({
                 url:that.tpmls.userdl,
@@ -35,14 +39,44 @@ var user_controller=function (){
                 okValue: '保存',
                 cancelValue: '取消',
                 ok: function () {
-
+                    $('#formTitleUpdate').submit();
+                    $.ajax({
+                        cache: false,
+                        type: "POST",
+                        url:that.apis.userSaveTitle,
+                        data:$('#formTitleUpdate').serialize(),
+                        async: true,
+                        error: function(request) {
+                            alert("系统出错！");
+                        },
+                        success: function(data) {
+                            window.location.reload();
+                        }
+                    });
                 }
             });
             d01.show();
         },
+        userpage:function(){
+            $('#userFormid').submit();
+            $.ajax({
+                cache: false,
+                type: "POST",
+                url:that.apis.userSaveArticle,
+                data:$('#userFormid').serialize(),
+                async: true,
+                error: function(request) {
+                    alert("系统出错！");
+                },
+                success: function(data) {
+                    window.location.reload();
+                }
+            });
+        },
         _initPage:function(){
 
         }
+
     };
 
 
