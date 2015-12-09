@@ -33,6 +33,7 @@ var user_controller=function (){
             });
             var html=htmlobj.responseText;
             var d01 = dialog({
+                cache:false,
                 title: '设置标题',
                 content:html,
                 cancel:true,
