@@ -18,20 +18,24 @@
                      -o-animation: bannerMove03 1s ease;
                      animation: bannerMove03 1s ease;  }
 /*list*/
-.main-header{ width:100%; min-width: 1200px; height: 70px; line-height: 70px;font-size: 14px; color:#fff;text-align: center; background:#333;}
-.main-header nav{ display: inline-block; text-align: center;}
+.main-header{ width:100%; min-width: 1200px; height: 70px; line-height: 70px;font-size: 14px; color:#fff;text-align: center; background:#00a8e6;}
+.main-header nav{ display: inline-block; text-align: center;vertical-align: top;}
 .main-header nav a{ color: #fff; display: inline-block; padding: 0 10px;}
 .main-header nav .change-skin{display: inline-block;width:30px; color:#fff; position: relative;}
 .main-header ul{position: absolute;right: 14px;top: 43px; width: 20px;}
 .main-header ul li{height: 22px;}
 .main-header ul li a{display:block; width:20px;height:20px;}
+.main-header h1{    display: inline-block;color:#fff; font-family: "黑体"; font-size: 38px; padding-right: 20px;
+    line-height:70px;}
+.main-header h1 a{color:#fff;}
 #spanSkin{ display: block; cursor: pointer;}
 .wrapper{margin: 0 auto; margin-top:40px; width: 1200px;overflow: hidden;}
 .asideLeft{ width:200px; min-height: 500px; border-right:1px solid #ccc;}
 .asideLeft li{ padding-left: 10px;}
-.asideLeft h2{ font-size: 16px; padding-left: 10px; margin-bottom: 15px; color:#fff; background:#ADADAD; height:40px; line-height:40px;}
+.asideLeft h2{ font-size: 18px; padding-left: 10px; margin-bottom: 15px; color:#fff; background:#00a8e6; height:40px; line-height:40px;}
 .level-menu1 li{padding-left:15px; height:40px; line-height:40px;}
 .level-menu1 li a{display:block; color:#666;line-height:40px;}
+.level-menu1 li a:hover{ color: #00a8e6;}
 
 .sideRight{width:1000px; }
 .sideRight p{ color:#666;line-height:35px; padding-left:30px; font-size:16px;}

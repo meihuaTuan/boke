@@ -1,4 +1,5 @@
 <header class="main-header">
+    <h1><a href="/index.html">向日葵课堂</a></h1>
     <nav>
         <a href="/index.html">首页</a>|
         <a href="">HTML教程</a>|
