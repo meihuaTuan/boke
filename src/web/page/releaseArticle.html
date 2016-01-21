@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>博客</title>
+    <link rel="shortcut icon" href=" " /> 
+    <link href="../css/main.css" rel="stylesheet" type="text/css" />
+    <link href="../css/base.css" rel="stylesheet" type="text/css" />
+    <link href="../edit/css/demo.css" rel="stylesheet" type="text/css" />
+    <link href="../dialog/ui-dialog.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../script/jquery.js"></script>
+    <!--[if IE]>
+    <script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="boke-common-header"> </div>
+<div class="wrapper user">
+    <div class="asideLeft left">
+        <h2>个人中心</h2>
+        <dl>
+            <dt>课程分类</dt>
+        </dl>
+    </div>
+    <div class="sideRight right relative">
+        <span href="javascript:;" class="btn btn-titleOne mt20 absolute" style="display: none;">创建教程标题</span>
+        <form class="user-form" id="userFormid" method='post'>
+            <div class="user-div">
+                <label>选择课程一级分类</label>：
+                <select name="selOneTitle">
+                    <option value="html">html</option>
+                    <option value="css">css</option>
+                    <option value="php">php</option>
+                    <option value="jQuery">jQuery</option>
+                    <option value="javascript">javascript</option>
+                    <option value="java">java</option>
+                    <option value="ios">ios</option>
+                </select>
+            </div>
+            <div class="user-div">
+                <label>创建课程标题</label>：
+                <input type="text" name="selThrTitle" value="" />
+            </div>
+            <div class="user-editorTxt">
+                <input id="editor0" type="hidden">
+                <textarea id="editor1" name="userEditor" placeholder="在这里输入文本" >
+                </textarea>
+            </div>
+            <input type="submit" id="userBtnSave" class="btn-submit btn mt10 right"  value="保存"/>
+  </form>
+
+    </div>
+</div>
+<div class="boke-common-footer"> </div>
+
+
+
+
+
+
+
+
+
+
+
+<script src="../dialog/dialog-min.js"></script>
+<script type="text/javascript" src="../controller/releaseArticle.controller.js"></script>
+<script type="text/javascript" src="../edit/js/wysiwyg.js"></script>
+<script type="text/javascript" src="../edit/js/wysiwyg-editor.js"></script>
+<script type="text/javascript" src="../edit/js/demo.js"></script>
+<script type="text/javascript" src="../script/common.js"></script>
+</body>
+</html>

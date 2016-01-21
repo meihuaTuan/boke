@@ -403,15 +403,22 @@ $(document).ready(function(){
         })
         .change(function(){
             if( typeof console != 'undefined' )
-                console.log( 'change' );
+			    {
+				  
+				}
+               
         })
         .focus(function(){
             if( typeof console != 'undefined' )
-                console.log( 'focus' );
+                {
+				 
+				}
         })
         .blur(function(){
             if( typeof console != 'undefined' )
-                console.log( 'blur' );
+                {
+				  
+				}
         });
     });
 
@@ -438,15 +445,15 @@ $(document).ready(function(){
         element: $('#editor0').get(0),
         onkeypress: function( code, character, shiftKey, altKey, ctrlKey, metaKey ) {
                         if( typeof console != 'undefined' )
-                            console.log( 'RAW: '+character+' key pressed' );
+                          {}
                     },
         onselection: function( collapsed, rect, nodes, rightclick ) {
                         if( typeof console != 'undefined' && rect )
-                            console.log( 'RAW: selection rect('+rect.left+','+rect.top+','+rect.width+','+rect.height+'), '+nodes.length+' nodes' );
+                           {}
                     },
         onplaceholder: function( visible ) {
                         if( typeof console != 'undefined' )
-                            console.log( 'RAW: placeholder ' + (visible ? 'visible' : 'hidden') );
+                           {}
                     }
     };
     var wysiwygeditor = wysiwyg( option );

@@ -1,7 +1,5 @@
-@charset "utf-8";
-@import url(/css/base.css?__lele);
-@import url(/js/dialog/ui-dialog.css?__lele);
 /*index*/
+@import url(base.css?---meihua);
 .content{margin:0 auto; width:1200px; height:100%; position: relative; }
 .banner{ width:100%;min-width:1200px;margin-top:20px;background-color:#D6D6D6;height:450px;clear: both;  overflow: hidden; }
 .banner p{ font-family:"黑体"; position: absolute; }
@@ -31,10 +29,9 @@
 .wrapper{margin: 0 auto; margin-top:40px; width: 1200px;overflow: hidden;}
 .asideLeft{ width:200px; min-height: 500px; border-right:1px solid #ccc;}
 .asideLeft li{ padding-left: 10px;}
-.asideLeft h2{ font-size: 16px; padding-left: 10px; color:#fff; background:#ADADAD; height:40px; line-height:40px;}
-.level-menu1 li span{ display: block; height: 40px; line-height: 40px; font-size: 16px;}
-.level-menu2 li{ padding-left: 15px; height: 30px; line-height: 30px;}
-.level-menu2 li a{ color: #666;line-height: 30px;}
+.asideLeft h2{ font-size: 16px; padding-left: 10px; margin-bottom: 15px; color:#fff; background:#ADADAD; height:40px; line-height:40px;}
+.level-menu1 li{padding-left:15px; height:40px; line-height:40px;}
+.level-menu1 li a{display:block; color:#666;line-height:40px;}
 
 .sideRight{width:1000px; }
 .sideRight p{ color:#666;line-height:35px; padding-left:30px; font-size:16px;}

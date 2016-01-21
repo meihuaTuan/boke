@@ -8,11 +8,11 @@ var user_controller=function (){
 
          },
         apis:{
-            userSaveTitle:'/page/models/userDialog.html',
-            userSaveArticle:'/page/list.html'
+            userSaveTitle:' ',
+            userSaveArticle:' '
         },
         tpmls:{
-            userdl:'/page/models/userDialog.html'
+            userdl:'../modules/dialog/userDialog.html'
         },
         _initEvents:function(){     //事件
             var that=this;
